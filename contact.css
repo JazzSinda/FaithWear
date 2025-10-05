@@ -1,0 +1,164 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header (same as other pages) */
+header {
+  background-color: #2d4d75;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd700;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  background: linear-gradient(to bottom right, #2d4d75, #4b6fa4);
+  color: white;
+  padding: 80px 20px;
+}
+
+#hero h2 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.contact-info {
+  max-width: 400px;
+}
+
+.contact-info h3 {
+  color: #2d4d75;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  background-color: #f8faff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.contact-form h3 {
+  color: #2d4d75;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #2d4d75;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+button.btn {
+  margin-top: 20px;
+  background-color: #ffd700;
+  color: #2d4d75;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button.btn:hover {
+  background-color: #e6c300;
+}
+
+/* Bible Verse Section */
+#verse {
+  background-color: #2d4d75;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#verse blockquote {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+#verse span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  background-color: #0f1e36;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form, .contact-info {
+    width: 100%;
+    max-width: 90%;
+  }
+}

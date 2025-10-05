@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f8faff;
+  color: #1b3557;
+  line-height: 1.6;
+}
+
+/* Header (same as Home Page) */
+header {
+  background-color: #2d4d75;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Navbar Links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd700;
+}
+
+/* Auth Section */
+#auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #2d4d75, #426da4);
+  min-height: 80vh;
+}
+
+.auth-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+.form {
+  display: none;
+  flex-direction: column;
+}
+
+.form.active {
+  display: flex;
+}
+
+.form h2 {
+  color: #2d4d75;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.form button {
+  background-color: #2d4d75;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #3a5b8f;
+}
+
+.form p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form span {
+  color: #2d4d75;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #0f1e36;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
