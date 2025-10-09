@@ -28,6 +28,15 @@
     <h2>Our Products</h2>
     <div class="product-grid">
 
+<!-- Cart Section -->
+<section id="cart">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <p id="cart-total">Total: ₱0</p>
+  <button id="clear-cart">Clear Cart</button>
+</section>
+
+
       <!-- Shirts -->
       <div class="product-card">
         <img src="wear1.png" alt="Faith Shirt">
@@ -79,5 +88,56 @@
   <footer>
     <p>© 2025 FaithWear | Made to Glorify Jesus Christ</p>
   </footer>
+
+<script>
+  // Select all Add to Cart buttons
+  const buttons = document.querySelectorAll(".product-card button");
+  const cartItemsContainer = document.getElementById("cart-items");
+  const cartTotalElement = document.getElementById("cart-total");
+  const clearCartButton = document.getElementById("clear-cart");
+
+  let cart = [];
+  let total = 0;
+
+  buttons.forEach(button => {
+    button.addEventListener("click", (e) => {
+      const productCard = e.target.closest(".product-card");
+      const name = productCard.querySelector("h3").textContent;
+      const priceText = productCard.querySelector("p").textContent;
+      const price = parseInt(priceText.replace("₱", ""));
+
+      // Add product to cart array
+      cart.push({ name, price });
+      total += price;
+
+      // Update the display
+      renderCart();
+    });
+  });
+
+  // Function to update cart display
+  function renderCart() {
+    cartItemsContainer.innerHTML = ""; // clear
+    cart.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.classList.add("cart-item");
+      div.innerHTML = `
+        <span>${item.name}</span>
+        <span>₱${item.price}</span>
+      `;
+      cartItemsContainer.appendChild(div);
+    });
+    cartTotalElement.textContent = "Total: ₱" + total;
+  }
+
+  // Clear cart button
+  clearCartButton.addEventListener("click", () => {
+    cart = [];
+    total = 0;
+    renderCart();
+  });
+</script>
+
+
 </body>
 </html>
