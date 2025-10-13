@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.logo, #hero h2 {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
 
 /* Body */
 body {
@@ -238,6 +242,7 @@ footer {
 #clear-cart:hover {
   background-color: #e6c300;
 }
+
 
 
 
