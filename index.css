@@ -233,12 +233,8 @@ footer {
   text-align: center;
   color: white;
   border-radius: 10px;
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
-}
+ -webkit-text-stroke: 1.5px black; /* crisp outline for WebKit browsers */
+  text-stroke: 1.5px black;
 }
 
 
@@ -256,6 +252,7 @@ footer {
   background-color: #e6c300;
 
 }
+
 
 
 
