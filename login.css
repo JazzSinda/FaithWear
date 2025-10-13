@@ -46,24 +46,6 @@ nav a.active {
   color: #ffd700;
 }
 
-/* Auth Section */
-#auth-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #2d4d75, #426da4);
-  min-height: 80vh;
-}
-
-.auth-container {
-  background-color: white;
-  padding: 40px 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
 
 /* Forms */
 .form {
@@ -151,6 +133,12 @@ nav a.active {
 .auth-container {
   position: relative;
   z-index: 1;
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -210,5 +198,6 @@ footer {
   padding-top: 15px;
   font-size: 0.85em;
 }
+
 
 
