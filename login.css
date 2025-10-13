@@ -111,7 +111,6 @@ nav a.active {
 /* Adjust #auth-section to handle overlay and positioning */
 #auth-section {
   position: relative;     /* needed for z-index layering */
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
@@ -198,6 +197,7 @@ footer {
   padding-top: 15px;
   font-size: 0.85em;
 }
+
 
 
 
