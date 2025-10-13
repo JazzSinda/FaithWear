@@ -50,9 +50,13 @@ nav a.active {
 /* Hero Section */
 #hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #2d4d75, #426da4);
+  padding: 120px 20px;
+  background-image: url('hero-bg.jpg'); /* Replace with your image filename */
+  background-size: cover;      /* Makes it fill the section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
   color: white;
+  position: relative;
 }
 
 #hero h2 {
@@ -234,5 +238,6 @@ footer {
 #clear-cart:hover {
   background-color: #e6c300;
 }
+
 
 
