@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.logo, #hero h2 {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
 /* Body */
 body {
   background-color: #f8faff;
@@ -220,3 +224,4 @@ footer {
   padding-top: 15px;
   font-size: 0.85em;
 }
+
